@@ -4,13 +4,63 @@
     <meta charset="UTF-8">
     <title>My first web component</title>
     <link rel="import" href="my-first-web-component/my-first-web-component.html">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Give+You+Glory" />
     <style>
-        <!-- Style your component element here -->
+        .container {
+			width: 600px;
+			height: 350px;
+			background-color: black;
+			border-radius: 8px;
+			text-align: center;
+        }
+        .greeting {
+        	color: gold;
+        	font-size: 24px;
+        	line-height: 32px;
+        }
+        #statement {
+        	color: gold;
+        	font-size: 24px;
+        	line-height: 28px;
+        }
+        #redBox {
+			background-color: #800000;
+			width: 520px;
+			height: 200px;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			margin-left: 40px;
+			border-radius: 8px;
+        }
+        #myName {
+			color: gold;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			font-size: 42px;
+        }
+        #myName, .greeting, #statement {
+        	font-family: 'Give You Glory';
+			font-style: italic;
+			font-variant: normal;
+			font-weight: bold;
+        }
     </style>
 </head>
 <body>
-<!-- Start HTML Content -->
-    <!-- Create your first web component!  Add the tag and some content here -->
-<!-- End HTML Content -->
+
+<section class="container">
+	<div class="greeting">
+		<h1>Hello</h1>
+		<h2>My name is:</h2>
+	</div>
+
+	<div id="redBox">
+		<div id="myName">
+			Rosio
+		</div>
+	</div>
+</section>
 </body>
 </html>
